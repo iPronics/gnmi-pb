@@ -7,6 +7,21 @@ This is **not** an official build. For the official GNMI sources, see:
 
 https://github.com/openconfig/gnmi
 
+## Installation & usage
+
+Install from pypi, e.g.:
+
+```
+pip install gnmi_pb
+```
+
+Import the gnmi protobuf submodules from the `gnmi_pb` module:
+
+```
+>>> from gnmi_pb import gnmi_pb2, gnmi_pb2_grpc
+
+>>> gnmi_pb2.GetRequest(...)
+```
 
 ## Note about versions
 
