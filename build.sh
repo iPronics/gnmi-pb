@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Define the path to the proto folder
 ROOT_DIR="$(dirname $0)"
 PROTO_DIR="$ROOT_DIR/proto"
 SRC_DIR="$ROOT_DIR/src/gnmi_pb"
