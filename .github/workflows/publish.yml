@@ -1,0 +1,38 @@
+name: Publish gNMI Python 🐍 distribution 📦 to PyPI
+on:
+  push:
+    branch:
+      - main
+    tags:
+      - "*"
+
+jobs:
+  build: 
+    names: Build distribution 📦
+    runs-on: ubuntu-latest
+  
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install uv
+        uses: astral-sh/setup-uv@v2
+      - uses: actions/setup-python@v5
+        with:
+          python-version-file: ".python-version"
+      - name: Create wheel (and store its name in env.wheel)
+        run: uv build && echo "wheel=$(ls dist/*.whl)" >> $GITHUB_ENV
+
+  pypi-publish:
+    name: upload release to PyPI 📦
+    runs-on: ubuntu-latest
+    # Specifying a GitHub environment is optional, but strongly encouraged
+    environment: pypi
+    permissions:
+      # IMPORTANT: this permission is mandatory for Trusted Publishing
+      id-token: write
+    steps:
+      - name: Create python distribution packages
+      # retrieve your distributions here
+
+      - name: Publish package distributions to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
