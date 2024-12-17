@@ -1,8 +1,6 @@
 name: Publish gNMI Python 🐍 distribution 📦 to PyPI
 on:
   push:
-    branch:
-      - main
     tags:
       - "*"
 
