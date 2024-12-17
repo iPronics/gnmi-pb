@@ -23,7 +23,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version-file: ".python-version"
-      - name: Create wheel (and store its name in env.wheel)
-        run: uv build && echo "wheel=$(ls dist/*.whl)" >> $GITHUB_ENV
+      - name: Build distribution
+        run: uv build
       - name: Publish package distributions 📦 to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
