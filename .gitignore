@@ -1,3 +1,7 @@
+# Do not upload generated files
+src/gnmi_pb/gnmi_*.py
+src/gnmi_pb/gnmi_*.pyi
+
 # Environments
 .env
 .venv
