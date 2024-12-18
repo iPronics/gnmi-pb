@@ -4,7 +4,26 @@ version = "0.11.0.0"
 description = "Unofficial GNMI proto python distribution project"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = [
-    "grpcio>=1.68.1",
-    "grpcio-tools>=1.68.1",
+readme = "README.md"
+license = { file = "LICENSE" }
+maintainers = [{ name = "iPronics SW Team", email = "support@ipronics.com" }]
+keywords = ["gNMI", "proto"]
+dependencies = ["grpcio>=1.68.1", "grpcio-tools>=1.68.1"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Unix",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Communications",
+    "Topic :: Scientific/Engineering",
 ]
+
+[project.urls]
+Homepage = "https://github.com/iPronics/gnmi-pb"
+Source = "https://github.com/iPronics/gnmi-pb"
+Issues = "https://github.com/iPronics/gnmi-pb/issues"
