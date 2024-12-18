@@ -33,8 +33,10 @@ When the official proto sources are modified, it is mentioned it in the Changelo
 
 # Changelog
 
-## 0.11.0.0 (unreleased)
+## 0.11.0.0 2024-12-18
 
 ### Added
-- project skeleton 
-- protos from official GNMI v0.11.0
+- protos from official GNMI v0.11.0 . Modified imports ([50e1d47](https://github.com/iPronics/gnmi-pb/commit/50e1d473bc14a4fb218db51bb7dd1594987c61a9))
+- project skeleton and metadata
+- `build.sh` for automated generation of python and type files and distribution creation
+- CI workflow for publishing python distribution in PyPI
