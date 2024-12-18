@@ -21,6 +21,6 @@ jobs:
         with:
           python-version-file: ".python-version"
       - name: Build distribution
-        run: uv build
+        run: ./build.sh
       - name: Publish package distributions 📦 to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
